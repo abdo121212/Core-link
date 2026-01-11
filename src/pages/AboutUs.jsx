@@ -1,6 +1,7 @@
 import { ShieldCheck, Network, Server, Cpu, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import backGr from "../assets/website/employee-working-marketing-setting.jpg";
 function AboutUs() {
   return (
     <>
@@ -15,30 +16,33 @@ function AboutUs() {
       <div className="w-full  select-none dark:bg-slate-950   overflow-hidden bg-white">
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center">
-          <div className="absolute inset-0 bg-linear-to-br from-blue-600/20 via-cyan-500/10 to-transparent" />
-
           <div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative z-10 text-center max-w-4xl px-6"
-          >
-            <h1
-              data-aos-delay="300"
-              data-aos="fade-up"
-              className="text-4xl md:text-6xl font-bold mb-6"
+            style={{ backgroundImage: `url(${backGr})` }}
+            className="absolute bg-fixed  inset-0 bg-cover bg-center"
+          />
+
+            <div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative z-10 text-center max-w-4xl px-6"
             >
-              About <span className="text-[#223760]">Core Link</span>
-            </h1>
-            <p
-              data-aos-delay="400"
-              data-aos="fade-up"
-              className="dark:text-gray-300 text-lg md:text-xl leading-relaxed "
-            >
-              Integrated Technology Solutions delivering secure, scalable, and
-              smart IT infrastructure across Saudi Arabia.
-            </p>
-          </div>
+              <h1
+                data-aos-delay="300"
+                data-aos="fade-up"
+                className="text-4xl md:text-6xl font-bold mb-6 text-white"
+              >
+                About <span className="text-[#223760]">Core Link</span>
+              </h1>
+              <p
+                data-aos-delay="400"
+                data-aos="fade-up"
+                className="text-white text-lg md:text-xl leading-relaxed "
+              >
+                Integrated Technology Solutions delivering secure, scalable, and
+                smart IT infrastructure across Saudi Arabia.
+              </p>
+            </div>
         </section>
 
         {/* Who We Are */}
