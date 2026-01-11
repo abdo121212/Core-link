@@ -9,9 +9,8 @@ import MainLayout from "./MainLayout";
 import Contact from "./pages/Contact";
 import Solutions from "./pages/Solutions";
 import "aos/dist/aos.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import "swiper/css";
+import "swiper/css/autoplay";
 function App() {
   useEffect(() => {
     AOS.init({

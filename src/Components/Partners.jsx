@@ -1,4 +1,3 @@
-import Slider from "react-slick";
 import image2 from "../assets/Partners/download__10_-removebg-preview.png";
 import image4 from "../assets/Partners/download__12_-removebg-preview.png";
 import image7 from "../assets/Partners/download__16_-removebg-preview.png";
@@ -13,6 +12,8 @@ import image18 from "../assets/Partners/download__7_-removebg-preview.png";
 import image20 from "../assets/Partners/download__9_-removebg-preview.png";
 import image21 from "../assets/Partners/download__21_-removebg-preview.png";
 
+import { Autoplay } from "swiper/modules";
+import { SwiperSlide, Swiper } from "swiper/react";
 const Partners = () => {
   const images = [
     { id: 10, image: image10 },
@@ -30,66 +31,54 @@ const Partners = () => {
     { id: 9, image: image9 },
   ];
 
-  var settings = {
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    rtl: false,
-    cssEase: "linear",
-    arrows: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <section className="dark:text-white dark:bg-black container px-10  duration-300 my-20 ">
-      <h1 className="text-3xl sm:text-4xl text-center mb-12 pb-10" data-aos="fade-up">
+      <h1
+        className="text-3xl sm:text-4xl text-center mb-12 pb-10"
+        data-aos="fade-up"
+      >
         {" "}
         Our Partners
       </h1>
 
       <div data-aos="fade-up" data-aos-delay="400" className="slider-container">
-        <Slider {...settings}>
+        <Swiper
+          slidesPerView={1}
+          loop={true}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          }}
+          className="z-10"
+        >
           {images.map(({ id, image }) => (
-            <div>
-              <img
-                key={id}
-                src={image}
-                alt="partners"
-                className="object-cover h-30 w-30 rounded-2xl "
-              />
-            </div>
+            <SwiperSlide>
+              <div className="flex items-center justify-center">
+                <img
+                  key={id}
+                  src={image}
+                  alt="partners"
+                  className="object-cover h-30 w-30 rounded-2xl "
+                />
+              </div>
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </div>
     </section>
   );
