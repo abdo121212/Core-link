@@ -47,11 +47,14 @@ const Navbar = () => {
         <div className="flex items-center p-5 flex-col ">
           <h3
             data-aos="fade-right"
-            className="text-3xl font-semibold text-[#223760]"
+            className="text-3xl font-semibold dark:text-[#15429b] text-[#223760]"
           >
             Core <span className=" text-[#636870]">Link</span>
           </h3>
-          <h6 data-aos="fade-left" className="text-[#223760] tracking-widest">
+          <h6
+            data-aos="fade-left"
+            className="text-[#223760] dark:text-[#15429b] tracking-widest"
+          >
             ARABIA
           </h6>
         </div>

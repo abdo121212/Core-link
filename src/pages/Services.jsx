@@ -150,7 +150,7 @@ function ServiceRow({ icon, title, text }) {
 function Stat({ number, label }) {
   return (
     <div>
-      <h3 className="text-4xl font-extrabold text-cyan-500 dark:text-cyan-400 mb-2">
+      <h3 className="text-4xl font-extrabold dark:text-[#15429b] text-[#223760] mb-2">
         {number}
       </h3>
       <p className="text-gray-700 dark:text-gray-300">{label}</p>
