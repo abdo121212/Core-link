@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer components {
+  .primary-but {
+    @apply bg-linear-to-r from-primary to-secondary  py-2 px-6 duration-300 text-white rounded-full;
+  }
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+.animated-wrapper {
+  animation-name: move-wrapper;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-wrapper {
+  0% {
+    transform: translate(150%, 30%) rotate(0) scale(0.8);
+  }
+
+  0% {
+    transform: translate(60vw, 0) rotate(150deg) scale(1.2);
+  }
+
+  0% {
+    transform: translate(40vw, 40vh) rotate(0) scale(0.8);
+  }
+}
+
+@theme {
+  /* Fonts */
+  --font-parisienne: "Pacifico, serif";
+
+  /* Colors */
+  --color-primary: #00c2ff;
+  --color-secondary: #e00aff;
+  --color-dark: #111111;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

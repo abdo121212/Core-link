@@ -1,0 +1,55 @@
+import hero from "../assets/website/شبكة رقمية فوق سماء الرياض.png";
+
+const Hero = () => {
+  return (
+    <>
+      <div className="py-12 sm:py-0 duration-300  ">
+        <div className="container min-h-175 flex relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10 place-items-center my-36">
+            {/* hero text */}
+
+            <div className="space-y-5 lg:pr-20 order-2 sm:order-1 ">
+              <h1
+                className="text-4xl font-semibold bg-linear-to-r  from-secondary to-primary bg-clip-text  text-transparent"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                Delivering End-to-End Integrated Technology Solutions
+                <p className="bg-linear-to-r  from-primary to-secondary bg-clip-text  text-transparent">
+                  with Core Link
+                </p>
+              </h1>
+              <p data-aos="fade-up" data-aos-delay="400">
+                Core Link offers smart, reliable, and scalable integrated
+                technology solutions tailored to meet modern business and
+                enterprise requirements
+              </p>
+
+              <div className="flex gap-6">
+                <button
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  className="primary-but  cursor-pointer"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+            {/* hero imge */}
+
+            <div data-aos="fade-up" className="order-1 sm:order-2 ">
+              <img
+                src={hero}
+                alt="network"
+                className="duration-300 hover:blur-sm rounded-2xl"
+              />
+            </div>
+          </div>
+          {/* background color  */}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Hero;
