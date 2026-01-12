@@ -43,7 +43,7 @@ const Partners = () => {
 
       <div data-aos="fade-up" data-aos-delay="400" className="slider-container">
         <Swiper
-          slidesPerView={1}
+          slidesPerView={2}
           spaceBetween={20}
           loop={true}
           modules={[Autoplay]}

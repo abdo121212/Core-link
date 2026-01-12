@@ -9,7 +9,7 @@ const Features = () => {
       id: 1,
       name: "Customer Service",
       icon: (
-        <RiCustomerService2Line className="text-5xl text-primary group-hover:text-black duration-300" />
+        <RiCustomerService2Line className="text-5xl text-[#223760] dark:text-white  duration-300" />
       ),
       description: "Fast response, dedicated support, professional assistance",
       aosDelay: "300",
@@ -18,7 +18,7 @@ const Features = () => {
       id: 2,
       name: "Innovation",
       icon: (
-        <GiThink className="text-5xl text-primary group-hover:text-black duration-300" />
+        <GiThink className="text-5xl   duration-300 text-[#223760] dark:text-white " />
       ),
       description: "Innovative solutions to keep your business ahead",
       aosDelay: "500",
@@ -28,7 +28,7 @@ const Features = () => {
 
       name: "Efficiency",
       icon: (
-        <GrUserExpert className="text-5xl text-primary group-hover:text-black duration-500" />
+        <GrUserExpert className="text-5xl   duration-500 text-[#223760] dark:text-white " />
       ),
       description: "Efficient solutions designed to save time and resources",
       aosDelay: "700",
@@ -51,7 +51,7 @@ const Features = () => {
                 key={id}
                 data-aos="fade-up"
                 data-aos-delay={aosDelay}
-                className=" hover:text-black text-center group space-y-4 shadow-2xl select-none  p-4 sm:py-10 sm:space-y-6 hover:bg-linear-to-r from-primary to-secondary rounded-lg hover:shadow-[0_0_40px_#007cfff0] transition-all duration-300"
+                className=" text-center group space-y-4 shadow-2xl select-none  p-4 sm:py-10 sm:space-y-6  rounded-lg hover:shadow-[0_0_10px_#02264def] transition-all duration-300"
               >
                 <div className="grid place-items-center">{icon}</div>
                 <h1 className="text-2xl">{name}</h1>

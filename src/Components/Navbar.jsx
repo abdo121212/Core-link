@@ -44,20 +44,20 @@ const Navbar = () => {
     <nav className=" md:py-0 w-full   mx-auto   z-999   fixed dark:bg-black/90 bg-white rounded-b-2xl  shadow-xl">
       <div className="flex items-center justify-between  px-5 py-2">
         {/* Logo */}
-        <div className="flex items-center p-5 flex-col ">
+        <Link to={"/"} className="flex items-center p-5 flex-col ">
           <h3
             data-aos="fade-right"
-            className="text-3xl font-semibold dark:text-[#15429b] text-[#223760]"
+            className="text-3xl font-semibold dark:text-white text-[#223760]"
           >
-            Core <span className=" text-[#636870]">Link</span>
+            Core <span className=" text-[#636870] dark:text-white">Link</span>
           </h3>
           <h6
             data-aos="fade-left"
-            className="text-[#223760] dark:text-[#15429b] tracking-widest"
+            className="text-[#223760] dark:text-white tracking-widest"
           >
             ARABIA
           </h6>
-        </div>
+        </Link>
 
         {/* Desktop Menu section */}
 
@@ -71,13 +71,12 @@ const Navbar = () => {
                     onClick={() =>
                       window.scrollTo({
                         top: 0,
-                        left: 0,
                         behavior: "smooth",
                       })
                     }
                     className={({ isActive }) =>
                       isActive
-                        ? "text-xl font-medium text-primary border-b-2 hover:scale-105 border-primary duration-500 transition-colors py-2"
+                        ? "text-xl font-medium border-b-2 hover:scale-105 border-[#223760] text-[#223760]  dark:text-white dark:border-white duration-500 transition-colors py-2"
                         : "transition-colors py-2 text-xl font-medium  "
                     }
                   >
@@ -123,7 +122,7 @@ const Navbar = () => {
                           setOpen(!open);
                           window.scrollTo({ top: 0, behavior: "smooth" });
                         }}
-                        className=" border flex items-center justify-center  py-2 px-7  rounded-2xl text-xl duration-300 hover:text-primary"
+                        className=" border flex items-center justify-center  py-2 px-7  rounded-2xl text-xl duration-300 hover:scale-110"
                       >
                         {name}
                       </Link>

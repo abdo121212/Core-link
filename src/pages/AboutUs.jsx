@@ -32,7 +32,7 @@ function AboutUs() {
                 data-aos="fade-up"
                 className="text-4xl md:text-6xl font-bold mb-6 text-white"
               >
-                About <span className="text-[#223760]">Core Link</span>
+                About <span >Core Link</span>
               </h1>
               <p
                 data-aos-delay="400"
@@ -165,7 +165,7 @@ function AboutUs() {
 function Feature({ icon, title }) {
   return (
     <div className="dark:bg-slate-900 p-6 rounded-2xl flex items-center gap-4 dark:hover:bg-slate-800 transition">
-      <div className="text-cyan-400">{icon}</div>
+      <div className="">{icon}</div>
       <h4 className="font-semibold">{title}</h4>
     </div>
   );

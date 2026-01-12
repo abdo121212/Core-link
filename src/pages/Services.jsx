@@ -32,10 +32,7 @@ function Services() {
               data-aos="fade-up"
               className="text-5xl md:text-6xl font-extrabold mb-6"
             >
-              Our{" "}
-              <span className="text-[#223760] dark:text-[#223760]">
-                Services
-              </span>
+              Our <span className="text-[#223760] dark:text-white">Services</span>
             </h1>
             <p
               data-aos-delay="400"
@@ -93,8 +90,8 @@ function Services() {
           className="bg-gray-100 dark:bg-slate-900 py-20 px-6"
         >
           <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
-            <Stat number="10+" label="Years Experience" />
-            <Stat number="200+" label="Projects Delivered" />
+            <Stat number="1+" label="Years Experience" />
+            <Stat number="100+" label="Projects Delivered" />
             <Stat number="24/7" label="Support Availability" />
             <Stat number="99.9%" label="System Uptime" />
           </div>
@@ -102,7 +99,7 @@ function Services() {
 
         {/* CTA */}
         <section className="py-24 px-6">
-          <div className="max-w-6xl mx-auto rounded-3xl bg-linear-to-r from-cyan-500/20 to-blue-600/20 dark:from-cyan-500/10 dark:to-blue-600/10 p-16 text-center">
+          <div className="max-w-6xl mx-auto rounded-3xl  p-16 text-center">
             <h2
               data-aos-delay="300"
               data-aos="fade-up"
@@ -122,7 +119,7 @@ function Services() {
               to={"/contact"}
               data-aos-delay="400"
               data-aos="fade-up"
-              className="inline-flex items-center gap-2 bg-cyan-500 text-white dark:text-slate-950 px-8 py-4 rounded-xl font-semibold hover:bg-cyan-400 transition"
+              className="inline-flex items-center gap-2 bg-gray-700/50 text-white dark:text-slate-100 px-8 py-4 rounded-xl font-semibold hover:bg-slate-800 transition"
             >
               Request a Service <ArrowRight size={18} />
             </Link>
@@ -135,8 +132,8 @@ function Services() {
 
 function ServiceRow({ icon, title, text }) {
   return (
-    <div className="flex gap-6 items-start border-b border-primary dark:border-slate-800 pb-8">
-      <div className="text-cyan-500 dark:text-cyan-400 mt-1">{icon}</div>
+    <div className="flex gap-6 items-start border-b border-[#223760] dark:border-slate-800 pb-8">
+      <div className="text-[#223760] dark:text-white mt-1">{icon}</div>
       <div>
         <h3 className="text-2xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
@@ -150,7 +147,7 @@ function ServiceRow({ icon, title, text }) {
 function Stat({ number, label }) {
   return (
     <div>
-      <h3 className="text-4xl font-extrabold dark:text-[#15429b] text-[#223760] mb-2">
+      <h3 className="text-4xl font-extrabold dark:text-white text-[#223760] mb-2">
         {number}
       </h3>
       <p className="text-gray-700 dark:text-gray-300">{label}</p>

@@ -21,7 +21,7 @@ const Home = () => {
       <main className=" dark:text-white dark:bg-black  duration-300">
         <div className="container px-10 mx-auto">
         <Hero />
-        <Quotes />
+        {/* <Quotes /> */}
         <Banner />
         <TwoBanner />
         <Security />

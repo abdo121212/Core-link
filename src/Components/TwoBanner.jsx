@@ -7,9 +7,9 @@ const TwoBanner = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center">
           {/* text setion  */}
           <div className="space-y-5 lg:pr-20 order-2 sm:order-1 ">
-            <h1 className="text-4xl font-semibold ">
+            <h1 className="text-4xl font-semibold text-[#223760] dark:text-white">
               GET READY TO ENJOY WISH CORE LINK ,
-              <span className="bg-linear-to-r  from-primary to-secondary bg-clip-text  text-transparent">
+              <span className="bg-linear-to-r  from-[#223760] to-[#223760] dark:from-white dark:to-white/85 bg-clip-text  text-transparent">
                 We build intelligent, secure, and connected environments.
               </span>
             </h1>

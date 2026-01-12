@@ -23,7 +23,7 @@ function Contact() {
             data-aos="fade-left"
             className="text-5xl md:text-6xl font-extrabold mb-4"
           >
-            Contact <span className="text-[#223760] ">Us</span>
+            Contact <span className="text-[#223760] dark:text-white">Us</span>
           </h1>
           <p
             data-aos-delay="300"
@@ -41,7 +41,7 @@ function Contact() {
             <MapPin
               data-aos-delay="300"
               data-aos="fade-down"
-              className="text-cyan-500 dark:text-cyan-400"
+              className="text-[#223760] dark:text-white"
               size={32}
             />
             <h3
@@ -63,7 +63,7 @@ function Contact() {
             <Mail
               data-aos-delay="300"
               data-aos="fade-down"
-              className="text-cyan-500 dark:text-cyan-400"
+              className="text-[#223760] dark:text-white"
               size={32}
             />
             <h3
@@ -85,7 +85,7 @@ function Contact() {
             <Phone
               data-aos-delay="300"
               data-aos="fade-down"
-              className="text-cyan-500 dark:text-cyan-400"
+              className="text-[#223760] dark:text-white"
               size={32}
             />
             <h3
@@ -134,7 +134,7 @@ function Contact() {
               className="p-4 rounded-xl border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
               required
             />
-            <button className="bg-cyan-500 hover:bg-cyan-400 text-white dark:text-slate-950 px-6 py-4 rounded-xl font-semibold transition">
+            <button className="dark:bg-cyan-500/50 bg-slate-400 hover:bg-cyan-400 dark:text-white text-slate-950 px-6 py-4 rounded-xl font-semibold transition">
               Send Message
             </button>
           </form>

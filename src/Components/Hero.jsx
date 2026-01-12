@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero from "../assets/website/شبكة رقمية فوق سماء الرياض.png";
 
 const Hero = () => {
@@ -10,12 +11,12 @@ const Hero = () => {
 
             <div className="space-y-5 lg:pr-20 order-2 sm:order-1 ">
               <h1
-                className="text-4xl font-semibold bg-linear-to-r  from-secondary to-primary bg-clip-text  text-transparent"
+                className="text-4xl font-semibold bg-linear-to-r  from-[#223760] to-[#223760] dark:from-white dark:to-white/85 bg-clip-text  text-transparent"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
                 Delivering End-to-End Integrated Technology Solutions
-                <p className="bg-linear-to-r  from-primary to-secondary bg-clip-text  text-transparent">
+                <p className="bg-linear-to-r  from-[#223760] to-[#223760] dark:from-white dark:to-white/85 bg-clip-text  text-transparent">
                   with Core Link
                 </p>
               </h1>
@@ -26,13 +27,20 @@ const Hero = () => {
               </p>
 
               <div className="flex gap-6">
-                <button
+                <Link
+                  to={"/about"}
                   data-aos="fade-up"
                   data-aos-delay="600"
-                  className="primary-but  cursor-pointer"
+                  onClick={() =>
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    })
+                  }
+                  className="bg-linear-to-r dark:border-white border-black border-2 py-2 px-6 duration-300 dark:text-white rounded-full  cursor-pointer "
                 >
                   Get Started
-                </button>
+                </Link>
               </div>
             </div>
             {/* hero imge */}

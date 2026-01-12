@@ -14,11 +14,14 @@ const Banner = () => {
 
           {/* text setion  */}
           <div className="space-y-5 lg:pr-20 order-2 sm:order-1 ">
-            <h1 className="text-4xl font-semibold" data-aos="fade-up">
+            <h1
+              className="text-4xl font-semibold text-[#223760]"
+              data-aos="fade-up"
+            >
               We provide
-              <span className="bg-linear-to-r  from-primary to-secondary bg-clip-text  text-transparent">
-                Integrated ICT, smart, networking, and security solutions under
-                one roof.
+              <span className="bg-linear-to-r  from-[#223760] to-[#223760] dark:from-white dark:to-white/85 bg-clip-text  text-transparent">
+                , Integrated ICT, smart, networking, and security solutions
+                under one roof.
               </span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
@@ -29,7 +32,7 @@ const Banner = () => {
             <div className="flex gap-6">
               <Link
                 to={"/about"}
-                className="primary-but cursor-pointer"
+                className="bg-linear-to-r dark:border-white border-black border-2 py-2 px-6 duration-300 dark:text-white rounded-full  cursor-pointer "
                 data-aos="fade-up"
                 data-aos-delay="600"
               >

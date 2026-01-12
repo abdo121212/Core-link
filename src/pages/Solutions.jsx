@@ -33,7 +33,7 @@ function Solutions() {
             className="relative z-10 text-center max-w-5xl px-6"
           >
             <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
-              Our <span className="text-[#223760]">Solutions</span>
+              Our <span className="text-[#223760] dark:text-white">Solutions</span>
             </h1>
             <p
               data-aos="fade-up"
@@ -137,13 +137,13 @@ function Solutions() {
         {/* Security First Banner */}
         <section className="py-24 px-6 max-w-7xl mx-auto">
           <div className="relative rounded-3xl overflow-hidden border dark:border-slate-800 shadow-2xl border-none">
-            <div className="absolute inset-0 bg-linear-to-r dark:from-slate-950 dark:to-slate-800" />
+            <div className="absolute inset-0 " />
 
             <div className="relative z-10 p-14 text-center">
               <Lock
                 data-aos="fade-up"
                 data-aos-delay="200"
-                className="mx-auto mb-6 text-cyan-400"
+                className="mx-auto mb-6 text-white "
                 size={48}
               />
               <h2
@@ -197,7 +197,7 @@ function Solutions() {
 function SolutionCard({ icon, title, text }) {
   return (
     <div className="dark:bg-slate-900 p-8 rounded-2xl border dark:border-slate-800 border-none shadow-2xl hover:border-cyan-400/40 hover:-translate-y-2 transition">
-      <div className="text-cyan-400 mb-5">{icon}</div>
+      <div className="dark:text-white text-[#223760]  mb-5">{icon}</div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-400 text-sm leading-relaxed">{text}</p>
     </div>
@@ -207,7 +207,7 @@ function SolutionCard({ icon, title, text }) {
 function Step({ number, title, text }) {
   return (
     <div className="dark:bg-slate-950 border dark:border-slate-800 border-none shadow-2xl p-8 rounded-2xl text-center">
-      <span className="text-cyan-400 font-bold text-3xl">{number}</span>
+      <span className="dark:text-white text-[#223760] font-bold text-3xl">{number}</span>
       <h4 className="mt-4 mb-2 font-semibold">{title}</h4>
       <p className="dark:text-gray-400 text-sm">{text}</p>
     </div>

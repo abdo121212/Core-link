@@ -15,7 +15,7 @@ const Security = () => {
           {/* text setion  */}
           <div className="space-y-5 lg:pr-20 order-2 sm:order-1 ">
             <h1 className="text-4xl font-semibold" data-aos="fade-up">
-              <span className="bg-linear-to-r  from-primary to-secondary bg-clip-text  text-transparent">
+              <span className="bg-linear-to-r  from-[#223760] to-[#223760] dark:from-white dark:to-white/85 bg-clip-text  text-transparent">
                 We secure your infrastructure, data, and operations with
                 advanced security solutions.
               </span>
@@ -28,7 +28,7 @@ const Security = () => {
             <div className="flex gap-6">
               <Link
                 to={"/solutions"}
-                className="primary-but cursor-pointer"
+                className=" bg-linear-to-r dark:border-white border-black border-2 py-2 px-6 duration-300 dark:text-white rounded-full  cursor-pointer  cursor-pointer"
                 data-aos="fade-up"
                 data-aos-delay="600"
               >
