@@ -15,7 +15,7 @@ const Banner = () => {
           {/* text setion  */}
           <div className="space-y-5 lg:pr-20 order-2 sm:order-1 ">
             <h1
-              className="text-4xl font-semibold text-[#223760]"
+              className="text-4xl font-semibold text-[#223760] dark:text-white"
               data-aos="fade-up"
             >
               We provide
