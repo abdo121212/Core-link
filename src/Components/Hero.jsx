@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import hero from "../assets/website/شبكة رقمية فوق سماء الرياض.png";
+import bg from "../assets/Video/media.mp4";
 
 const Hero = () => {
   return (
     <>
-      <div className="py-12 sm:py-0 duration-300  ">
+      <div className="py-12 sm:py-0 duration-300">
         <div className="container min-h-175 flex relative">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10 place-items-center my-36">
             {/* hero text */}
@@ -46,11 +46,14 @@ const Hero = () => {
             {/* hero imge */}
 
             <div data-aos="fade-up" className="order-1 sm:order-2 ">
-              <img
-                src={hero}
-                alt="network"
-                className="duration-300 hover:blur-sm rounded-2xl"
-              />
+              <video
+                loop
+                muted
+                autoPlay
+                className=" rounded-2xl top-0 right-0  w-full object-cover rounded-b-md"
+              >
+                <source src={bg} />
+              </video>
             </div>
           </div>
           {/* background color  */}

@@ -1,5 +1,5 @@
 import { MdOutlineEmail } from "react-icons/md";
-
+import bg from "../assets/website/globe-internet-icon-line-connection-circuit-board.jpg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import {
@@ -29,8 +29,13 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className="bg-gray-100 dark:bg-dark duration-300">
-        <div data-aos="fade" className="container mx-auto px-10 ">
+      <footer
+        style={{ backgroundImage: `url(${bg})` }}
+        className="bg-gray-100 dark:bg-dark duration-300 bg-cover relative "
+      >
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70"></div>
+
+        <div data-aos="fade" className="container mx-auto px-10 text-white ">
           <div className="grid md:grid-cols-3 py-4">
             {/* company Details */}
             <div className="py-8 px-4">
@@ -47,9 +52,9 @@ const Footer = () => {
 
               {/* social handle */}
               <div className="flex items-center gap-3 mt-6">
-                <FaFacebook className="text-3xl hover:text-primary duration-300" />
-                <FaInstagram className="text-3xl hover:text-primary duration-300" />
-                <FaLinkedin className="text-3xl hover:text-primary duration-300" />
+                <FaFacebook className="text-3xl hover:text-primary/40 duration-300" />
+                <FaInstagram className="text-3xl hover:text-primary/40 duration-300" />
+                <FaLinkedin className="text-3xl hover:text-primary/40 duration-300" />
               </div>
             </div>
 
@@ -128,7 +133,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center py-2 font-medium text-2xl">
+        <div className="text-center py-2 font-medium text-2xl text-white z-999 ">
           @ All Copyright 2026 by Core link{" "}
         </div>
       </footer>

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import bgImage from "../assets/website/cybersecurity-professional-work.jpg";
 
 function Solutions() {
   return (
@@ -24,8 +25,11 @@ function Solutions() {
       </Helmet>
       <div className="w-full select-none dark:bg-slate-950 dark:text-white">
         {/* Hero */}
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.15),transparent_60%)]" />
+        <section
+          style={{ backgroundImage: `url(${bgImage})` }}
+          className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-cover text-white bg-fixed"
+        >
+          <div className="" />
 
           <div
             data-aos="fade-up"
@@ -33,12 +37,12 @@ function Solutions() {
             className="relative z-10 text-center max-w-5xl px-6"
           >
             <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
-              Our <span className="text-[#223760] dark:text-white">Solutions</span>
+              Our <span className="">Solutions</span>
             </h1>
             <p
               data-aos="fade-up"
               data-aos-delay="500"
-              className="dark:text-gray-300 text-lg md:text-xl leading-relaxed"
+              className="text-lg md:text-xl leading-relaxed"
             >
               End-to-end technology solutions designed to secure, connect, and
               transform your business infrastructure.
@@ -207,7 +211,9 @@ function SolutionCard({ icon, title, text }) {
 function Step({ number, title, text }) {
   return (
     <div className="dark:bg-slate-950 border dark:border-slate-800 border-none shadow-2xl p-8 rounded-2xl text-center">
-      <span className="dark:text-white text-[#223760] font-bold text-3xl">{number}</span>
+      <span className="dark:text-white text-[#223760] font-bold text-3xl">
+        {number}
+      </span>
       <h4 className="mt-4 mb-2 font-semibold">{title}</h4>
       <p className="dark:text-gray-400 text-sm">{text}</p>
     </div>

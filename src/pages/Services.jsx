@@ -8,7 +8,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Helmet } from "react-helmet";
-
+import bg from "../assets/website/cloud-storage-banner-background.jpg";
 import { Link } from "react-router-dom";
 
 function Services() {
@@ -25,19 +25,24 @@ function Services() {
       <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white">
         {/* Hero */}
         <section className="relative py-32 px-6 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-tr from-cyan-200/20 via-cyan-100/10 to-transparent dark:from-slate-950 dark:via-slate-800 dark:to-transparent" />
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70"></div>
+
+          <div
+            style={{ backgroundImage: `url(${bg})` }}
+            className="absolute bg-fixed  inset-0 bg-cover bg-center"
+          />
           <div className="relative max-w-7xl mx-auto">
             <h1
               data-aos-delay="300"
               data-aos="fade-up"
-              className="text-5xl md:text-6xl font-extrabold mb-6"
+              className="text-5xl md:text-6xl font-extrabold mb-6 text-white"
             >
-              Our <span className="text-[#223760] dark:text-white">Services</span>
+              Our <span className="text-white">Services</span>
             </h1>
             <p
               data-aos-delay="400"
               data-aos="fade-up"
-              className="max-w-3xl text-gray-700 dark:text-gray-300 text-lg"
+              className="max-w-3xl  text-gray-300 text-lg"
             >
               Professional IT services tailored to design, deploy, and maintain
               secure and scalable technology environments.
