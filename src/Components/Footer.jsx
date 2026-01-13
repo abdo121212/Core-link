@@ -25,7 +25,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className="bg-gray-100 dark:bg-dark duration-300 bg-cover relative ">
+      <footer className="duration-300 bg-cover relative ">
         <video
           loop
           muted
@@ -35,14 +35,14 @@ const Footer = () => {
           <source src={NatureVideo} />
         </video>
 
-        <div data-aos="fade" className="container mx-auto px-10 ">
+        <div data-aos="fade" className="container mx-auto px-10 text-white">
           <div className="grid md:grid-cols-3 py-4">
             {/* company Details */}
             <div className="py-8 px-4">
               <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
                 Core Link
               </h1>
-              <p className="text-sm my-2 text-white ">
+              <p className="text-sm my-2  ">
                 It is not just a technology company, but a success partner
                 building the future with confidence.
               </p>
