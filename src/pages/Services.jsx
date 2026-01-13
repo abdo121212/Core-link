@@ -88,19 +88,7 @@ function Services() {
           />
         </section>
 
-        {/* Numbers / Stats */}
-        <section
-          data-aos-delay="300"
-          data-aos="fade-up"
-          className="bg-gray-100 dark:bg-slate-900 py-20 px-6"
-        >
-          <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
-            <Stat number="1+" label="Years Experience" />
-            <Stat number="100+" label="Projects Delivered" />
-            <Stat number="24/7" label="Support Availability" />
-            <Stat number="99.9%" label="System Uptime" />
-          </div>
-        </section>
+   
 
         {/* CTA */}
         <section className="py-24 px-6">
@@ -149,15 +137,5 @@ function ServiceRow({ icon, title, text }) {
   );
 }
 
-function Stat({ number, label }) {
-  return (
-    <div>
-      <h3 className="text-4xl font-extrabold dark:text-white text-[#223760] mb-2">
-        {number}
-      </h3>
-      <p className="text-gray-700 dark:text-gray-300">{label}</p>
-    </div>
-  );
-}
 
 export default Services;
