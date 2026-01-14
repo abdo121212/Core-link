@@ -24,8 +24,11 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className="duration-300 bg-cover relative dark:bg-black bg-white ">
-        <div data-aos="fade" className="container mx-auto px-10 text-white">
+      <footer className="duration-300 bg-cover relative dark:bg-black ">
+        <div
+          data-aos="fade"
+          className="container mx-auto px-10 dark:text-white text-black "
+        >
           <div className="grid md:grid-cols-3 py-4">
             {/* company Details */}
             <div className="py-8 px-4">
@@ -84,10 +87,7 @@ const Footer = () => {
                         key={link.id}
                         className="hover:translate-x-1 duration-300 "
                       >
-                        <Link
-                          to={link.link}
-                          className="cursor-pointer hover:text-primary"
-                        >
+                        <Link to={link.link} className="cursor-pointer">
                           {link.title}
                         </Link>
                       </li>
