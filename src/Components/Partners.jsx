@@ -19,7 +19,6 @@ const Partners = () => {
     { id: 10, image: image10, name: "Partner 10" },
     { id: 11, image: image11, name: "Pelco" },
     { id: 14, image: image14, name: "Partner 14" },
-    { id: 15, image: image15, name: "Partner 15" },
     { id: 16, image: image16, name: "Partner 16" },
     { id: 18, image: image18, name: "Partner 18" },
     { id: 21, image: image21, name: "Partner 21" },
@@ -27,11 +26,13 @@ const Partners = () => {
     { id: 4, image: image4, name: "Partner 4" },
     { id: 7, image: image7, name: "Partner 7" },
     { id: 8, image: image8, name: "Partner 8" },
+    { id: 15, image: image15, name: "Partner 15" },
+
     { id: 9, image: image9, name: "Partner 9" },
   ];
 
   return (
-    <section className="dark:text-white dark:bg-black container px-10 my-20 duration-300">
+    <section className="dark:text-white dark:bg-black container  my-20 duration-300">
       <h1
         className="text-3xl sm:text-4xl text-center mb-12 pb-10"
         data-aos="fade-up"
@@ -65,7 +66,7 @@ const Partners = () => {
                 <img
                   src={image}
                   alt={`Logo of ${name}`}
-                  className="object-cover h-30 w-40 rounded-2xl"
+                  className="object-cover h-30 w-40 rounded-2xl "
                 />
               </div>
             </SwiperSlide>

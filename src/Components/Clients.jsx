@@ -33,7 +33,7 @@ const Clients = () => {
   return (
     <section
       aria-labelledby="clients-title"
-      className="container px-10 py-20 dark:bg-black dark:text-white"
+      className="container  py-20 dark:bg-black dark:text-white"
     >
       {/* Section Title */}
       <h2
