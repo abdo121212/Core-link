@@ -13,7 +13,7 @@ const Hero = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover translate-y-52    "
+        className="absolute inset-0 w-full h-full object-cover translate-y-52 pl-10"
         aria-hidden="true"
       >
         <source src={bg} type="video/mp4" />

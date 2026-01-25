@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import "leaflet/dist/leaflet.css";
 import { Helmet } from "react-helmet";
+import background from "../assets/website/IMG_8021.JPG.jpeg";
 
 function Contact() {
   return (
@@ -14,18 +15,24 @@ function Contact() {
       </Helmet>
       <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white ">
         {/* Hero */}
-        <section className="py-32 px-6 text-center bg-linear-to-r from-cyan-200/30 to-blue-200/20 dark:from-slate-900 dark:to-slate-800">
+        <section
+          className=" relative py-56 inset-0 bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${background})` }}
+        >
+          {/* Overlay داكن */}
+          <div className="absolute inset-0 bg-black/50"></div>{" "}
+          {/* 50% شفافية */}
           <h1
             data-aos-delay="300"
             data-aos="fade-left"
-            className="text-5xl md:text-6xl font-extrabold mb-4"
+            className="text-5xl md:text-6xl font-extrabold mb-4 text-white text-center"
           >
-            Contact <span className="text-[#223760] dark:text-white">Us</span>
+            Contact <span className="">Us</span>
           </h1>
           <p
             data-aos-delay="300"
             data-aos="fade-right"
-            className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg"
+            className=" max-w-2xl mx-auto text-lg text-white text-center"
           >
             We'd love to hear from you! Reach out to us via form, email, phone,
             or visit us.
