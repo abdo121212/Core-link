@@ -1,8 +1,30 @@
-import { ShieldCheck, Network, Server, Cpu, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ShieldCheck, Network, Layers, Activity } from "lucide-react";
+
 import { Helmet } from "react-helmet";
-import backGr from "../assets/website/employee-working-marketing-setting.jpg";
+import bgV from "../assets/Video/gradient-technology-background.jpg";
 function AboutUs() {
+  const steps = [
+    {
+      icon: Network,
+      title: "One-Stop ICT Solutions",
+      desc: "Core Link Arabia offers comprehensive ICT, networking, and security services under one roof.",
+    },
+    {
+      icon: Layers,
+      title: "Integrated Project Delivery",
+      desc: "Our integrated approach ensures every project — from planning and design to implementation and long-term operations — meets modern business needs and operational goals.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Operational Excellence & SLA",
+      desc: "Beyond design, Core Link Arabia guarantees operational excellence through structured Service Level Agreements (SLA), proactive maintenance, and technical support.",
+    },
+    {
+      icon: Activity,
+      title: "Lifecycle Management & Compliance",
+      desc: "Our team manages the full lifecycle of mission-critical ICT and security systems, ensuring high availability, minimal downtime, and regulatory compliance.",
+    },
+  ];
   return (
     <>
       <Helmet>
@@ -13,148 +35,124 @@ function AboutUs() {
         />
       </Helmet>
 
-      <div className="w-full  select-none dark:bg-slate-950   overflow-hidden bg-white">
-        {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center justify-center">
-          <div
-            style={{ backgroundImage: `url(${backGr})` }}
-            className="absolute bg-fixed  inset-0 bg-cover bg-center"
-          />
+      <div className="w-full  select-none    overflow-hidden ">
+        <section>
+          <div className="absolute inset-0 bg-black/40 dark:bg-black/70" />
 
-            <div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="relative z-10 text-center max-w-4xl px-6"
-            >
-              <h1
-                data-aos-delay="300"
-                data-aos="fade-up"
-                className="text-4xl md:text-6xl font-bold mb-6 text-white"
-              >
-                About <span >Core Link</span>
-              </h1>
-              <p
-                data-aos-delay="400"
-                data-aos="fade-up"
-                className="text-white text-lg md:text-xl leading-relaxed "
-              >
-                Integrated Technology Solutions delivering secure, scalable, and
-                smart IT infrastructure across Saudi Arabia.
-              </p>
-            </div>
-        </section>
+          <div className="relative z-10 max-w-6xl mx-auto px-4">
+            <h2 className="text-center text-4xl font-bold mb-16 text-white">
+              About Core Link Arabia
+            </h2>
 
-        {/* Who We Are */}
-        <section className="py-20 px-6 max-w-7xl mx-auto">
-          <div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="grid md:grid-cols-2 gap-12 items-center"
-          >
-            <div>
-              <h2
-                data-aos-delay="500"
-                data-aos="fade-up"
-                className="text-3xl font-bold mb-4"
-              >
-                Who We Are
-              </h2>
-              <p
-                data-aos-delay="600"
-                data-aos="fade-up"
-                className="dark:text-gray-400 leading-relaxed"
-              >
-                Core Link is a Saudi-based technology company specializing in
-                ICT solutions, data centers, networking, cyber security, smart
-                systems, and low current solutions. We connect businesses with
-                future-ready technology.
-              </p>
-            </div>
+            {/* هنا تحط الـ Capabilities */}
 
-            <div
-              data-aos-delay="300"
-              data-aos="fade-up"
-              className="grid grid-cols-2 gap-6"
-            >
-              <Feature icon={<Network />} title="Networking" />
-              <Feature icon={<Server />} title="Data Centers" />
-              <Feature icon={<ShieldCheck />} title="Cyber Security" />
-              <Feature icon={<Cpu />} title="Smart Solutions" />
+            {/* Capabilities */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {steps.map((step, index) => (
+                <div
+                  key={index}
+                  className="
+          group relative overflow-hidden
+          rounded-3xl p-8
+          backdrop-blur-xl
+          
+          border border-white/30 
+          shadow-xl
+          hover:scale-[1.02]
+          transition-all duration-300
+        "
+                >
+                  {/* Glow */}
+                  <div
+                    className="
+          absolute inset-0
+          bg-linear-to-br from-[#223670]/10 to-transparent
+          opacity-0 group-hover:opacity-100
+          transition
+        "
+                  />
+
+                  {/* Icon */}
+                  <div
+                    className="
+          relative z-10
+          mb-6
+          flex h-14 w-14 items-center justify-center
+          rounded-2xl
+          bg-[#223670] text-white
+          shadow-lg
+        "
+                  >
+                    <step.icon size={28} />
+                  </div>
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+                      {step.title}
+                    </h3>
+
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                      {step.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* Vision & Mission */}
-        <section className="dark:bg-slate-900 py-20 px-6">
+        <section className="py-32 px-6">
           <div
-            data-aos-delay="300"
-            data-aos="fade-up"
-            className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10"
+            style={{
+              backgroundImage: `url(${bgV})`,
+              backgroundAttachment: "fixed",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            className="
+      relative
+      max-w-7xl mx-auto
+      min-h-[400px]
+      rounded-3xl
+      overflow-hidden
+      flex items-center justify-center
+      text-white
+    "
           >
-            <Card
-              title="Our Vision"
-              text="To become a leading system integrator in the Middle East, delivering innovative and secure technology solutions."
-            />
-            <Card
-              title="Our Mission"
-              text="Empowering organizations with reliable IT infrastructure and intelligent systems that drive growth."
-            />
-          </div>
-        </section>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/50" />
 
-        {/* Why Choose Us */}
-        <section className="py-20 px-6 max-w-7xl mx-auto">
-          <h2
-            data-aos-delay="300"
-            data-aos="fade-up"
-            className="text-3xl font-bold text-center mb-12"
-          >
-            Why Core Link?
-          </h2>
-
-          <div
-            data-aos-delay="500"
-            data-aos="fade-up"
-            className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 "
-          >
-            <Reason text="Enterprise-grade solutions" />
-            <Reason text="Certified engineers" />
-            <Reason text="End-to-end integration" />
-            <Reason text="24/7 technical support" />
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="bg-linear-to-r dark:from-slate-950 dark:to-slate-800 py-16">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2
-              data-aos-delay="300"
-              data-aos="fade-up"
-              className="text-3xl font-bold mb-4"
+            {/* Content */}
+            <div
+              className="
+        relative z-10
+        grid grid-cols-1 md:grid-cols-2
+        gap-12
+        max-w-5xl
+        px-6
+        text-center md:text-left
+      "
             >
-              Let’s Build the Future Together
-            </h2>
-            <p data-aos-delay="500" data-aos="fade-up" className="mb-6">
-              Partner with Core Link for reliable, scalable, and secure IT
-              solutions.
-            </p>
-            <Link
-              to={"/contact"}
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-              data-aos-delay="600"
-              data-aos="fade-up"
-              className="inline-flex items-center gap-2  bg-black text-white px-6 py-3 rounded-xl hover:scale-105 transition"
-            >
-              Contact Us <ArrowRight size={18} />
-            </Link>
+              {/* Vision */}
+              <div className="space-y-4">
+                <h3 className="text-3xl font-bold">Our Vision</h3>
+                <p className="text-white/90 text-lg">
+                  To become a leading system integrator in the Middle East,
+                  delivering innovative and secure technology solutions.
+                </p>
+              </div>
+
+              {/* Mission */}
+              <div className="space-y-4">
+                <h3 className="text-3xl font-bold">Our Mission</h3>
+                <p className="text-white/90 text-lg">
+                  Empowering organizations with reliable IT infrastructure and
+                  intelligent systems that drive growth.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
@@ -173,7 +171,7 @@ function Feature({ icon, title }) {
 
 function Card({ title, text }) {
   return (
-    <div className="dark:bg-slate-950 border dark:text-white dark:border-slate-800 border-none shadow-2xl p-8 rounded-2xl">
+    <div className=" dark:shadow-white dark:shadow-sm border dark:text-white dark:border-white border-none shadow-2xl p-8 rounded-2xl">
       <h3 className="text-xl font-semibold mb-3 ">{title}</h3>
       <p className="dark:text-gray-400 ">{text}</p>
     </div>
@@ -182,7 +180,7 @@ function Card({ title, text }) {
 
 function Reason({ text }) {
   return (
-    <div className="dark:bg-slate-900 p-6 rounded-2xl text-center dark:text-gray-300 shadow-2xl">
+    <div className="border border-white p-6 rounded-2xl text-center dark:text-gray-300 shadow-2xl">
       {text}
     </div>
   );

@@ -9,35 +9,42 @@ import image9 from "../assets/ClientsP/download__1_-removebg-preview (1).png";
 import image10 from "../assets/ClientsP/download__1_-removebg-preview.png";
 import image11 from "../assets/ClientsP/download__2_-removebg-preview (1).png";
 import image14 from "../assets/ClientsP/download__2_-removebg-preview.png";
-import image15 from "../assets/ClientsP/download__3_-removebg-preview (1).png";
 import image16 from "../assets/ClientsP/download__3_-removebg-preview.png";
 import image18 from "../assets/ClientsP/download__4_-removebg-preview.png";
 import image20 from "../assets/ClientsP/download__5_-removebg-preview.png";
 import image21 from "../assets/ClientsP/download__7_-removebg-preview.png";
 
 const Clients = () => {
-  const images = [
-    { id: 10, image: image10 },
-    { id: 11, image: image11 },
-    { id: 14, image: image14 },
-    { id: 15, image: image15 },
-    { id: 16, image: image16 },
-    { id: 18, image: image18 },
-    { id: 20, image: image20 },
-    { id: 21, image: image21 },
-    { id: 2, image: image2 },
-    { id: 4, image: image4 },
-    { id: 7, image: image7 },
-    { id: 8, image: image8 },
-    { id: 9, image: image9 },
+  const clients = [
+    { id: 10, image: image10, name: "Client Logo 1" },
+    { id: 11, image: image11, name: "Client Logo 2" },
+    { id: 14, image: image14, name: "Client Logo 3" },
+    { id: 16, image: image16, name: "Client Logo 4" },
+    { id: 18, image: image18, name: "Client Logo 5" },
+    { id: 20, image: image20, name: "Client Logo 6" },
+    { id: 21, image: image21, name: "Client Logo 7" },
+    { id: 2, image: image2, name: "Client Logo 8" },
+    { id: 4, image: image4, name: "Client Logo 9" },
+    { id: 7, image: image7, name: "Client Logo 10" },
+    { id: 8, image: image8, name: "Client Logo 11" },
+    { id: 9, image: image9, name: "Client Logo 12" },
   ];
 
   return (
-    <section className="dark:text-white dark:bg-black container px-10 py-20">
-      <h1 className="text-3xl sm:text-4xl text-center pb-20" data-aos="fade-up">
+    <section
+      aria-labelledby="clients-title"
+      className="container px-10 py-20 dark:bg-black dark:text-white"
+    >
+      {/* Section Title */}
+      <h2
+        id="clients-title"
+        className="text-3xl sm:text-4xl text-center pb-20 font-semibold"
+        data-aos="fade-up"
+      >
         Our Clients
-      </h1>
+      </h2>
 
+      {/* Slider */}
       <div data-aos="fade-up" data-aos-delay="400" className="slider-container">
         <Swiper
           slidesPerView={2}
@@ -56,17 +63,18 @@ const Clients = () => {
             1024: { slidesPerView: 5 },
           }}
           className="z-10"
-          dir="rtl" 
+          dir="rtl"
         >
-          {images.map(({ id, image }) => (
+          {clients.map(({ id, image, name }) => (
             <SwiperSlide key={id}>
-              <div className="flex items-center justify-center">
+              <figure className="flex items-center justify-center">
                 <img
                   src={image}
-                  alt="logo for our clients"
-                  className="object-cover h-30 w-30 rounded-2xl"
+                  alt={`${name} company logo`}
+                  loading="lazy"
+                  className="object-contain h-28 w-28 rounded-2xl"
                 />
-              </div>
+              </figure>
             </SwiperSlide>
           ))}
         </Swiper>

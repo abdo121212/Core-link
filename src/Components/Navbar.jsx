@@ -18,23 +18,14 @@ const Navbar = () => {
       name: "Home",
       link: "/",
     },
+
     {
       id: 2,
-      name: "About",
-      link: "about",
-    },
-    {
-      id: 3,
-      name: "Solutions",
-      link: "solutions",
-    },
-    {
-      id: 4,
       name: "Services",
       link: "services",
     },
     {
-      id: 5,
+      id: 3,
       name: "Contact",
       link: "contact",
     },
@@ -89,7 +80,6 @@ const Navbar = () => {
 
           <DarkMode />
         </nav>
-
 
         <nav className="md:hidden flex items-center gap-4  ">
           <DarkMode />

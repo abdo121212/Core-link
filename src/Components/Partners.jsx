@@ -9,35 +9,33 @@ import image14 from "../assets/Partners/download__3_-removebg-preview.png";
 import image15 from "../assets/Partners/download__4_-removebg-preview.png";
 import image16 from "../assets/Partners/download__5_-removebg-preview.png";
 import image18 from "../assets/Partners/download__7_-removebg-preview.png";
-import image20 from "../assets/Partners/download__9_-removebg-preview.png";
 import image21 from "../assets/Partners/download__21_-removebg-preview.png";
 
 import { Autoplay } from "swiper/modules";
-import { SwiperSlide, Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const Partners = () => {
-  const images = [
-    { id: 10, image: image10 },
-    { id: 11, image: image11 },
-    { id: 14, image: image14 },
-    { id: 15, image: image15 },
-    { id: 16, image: image16 },
-    { id: 18, image: image18 },
-    { id: 20, image: image20 },
-    { id: 21, image: image21 },
-    { id: 2, image: image2 },
-    { id: 4, image: image4 },
-    { id: 7, image: image7 },
-    { id: 8, image: image8 },
-    { id: 9, image: image9 },
+  const partners = [
+    { id: 10, image: image10, name: "Partner 10" },
+    { id: 11, image: image11, name: "Pelco" },
+    { id: 14, image: image14, name: "Partner 14" },
+    { id: 15, image: image15, name: "Partner 15" },
+    { id: 16, image: image16, name: "Partner 16" },
+    { id: 18, image: image18, name: "Partner 18" },
+    { id: 21, image: image21, name: "Partner 21" },
+    { id: 2, image: image2, name: "Partner 2" },
+    { id: 4, image: image4, name: "Partner 4" },
+    { id: 7, image: image7, name: "Partner 7" },
+    { id: 8, image: image8, name: "Partner 8" },
+    { id: 9, image: image9, name: "Partner 9" },
   ];
 
   return (
-    <section className="dark:text-white dark:bg-black container px-10  duration-300 my-20 ">
+    <section className="dark:text-white dark:bg-black container px-10 my-20 duration-300">
       <h1
         className="text-3xl sm:text-4xl text-center mb-12 pb-10"
         data-aos="fade-up"
       >
-        {" "}
         Our Partners
       </h1>
 
@@ -48,27 +46,26 @@ const Partners = () => {
           loop={true}
           modules={[Autoplay]}
           autoplay={{
-            delay: 0, 
+            delay: 0,
             disableOnInteraction: false,
             pauseOnMouseEnter: false,
           }}
-          speed={1000} 
+          speed={1000}
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 5 },
           }}
           className="z-10"
-          dir="ltr" // أو "rtl" لو عايز يمشي من اليمين للشمال
+          dir="ltr"
         >
-          {images.map(({ id, image }) => (
-            <SwiperSlide>
+          {partners.map(({ id, image, name }) => (
+            <SwiperSlide key={id}>
               <div className="flex items-center justify-center">
                 <img
-                  key={id}
                   src={image}
-                  alt="partners"
-                  className="object-cover h-30 w-30 rounded-2xl "
+                  alt={`Logo of ${name}`}
+                  className="object-cover h-30 w-40 rounded-2xl"
                 />
               </div>
             </SwiperSlide>

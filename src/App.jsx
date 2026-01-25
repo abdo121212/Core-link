@@ -3,11 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import AOS from "aos";
 import Home from "./pages/Home";
-import About from "./pages/AboutUs";
 import Services from "./pages/Services";
 import MainLayout from "./MainLayout";
 import Contact from "./pages/Contact";
-import Solutions from "./pages/Solutions";
 import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -22,8 +20,6 @@ function App() {
     AOS.refresh();
   }, []);
 
-  
-
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -33,10 +29,7 @@ function App() {
           index: true,
           element: <Home />,
         },
-        {
-          path: "/about",
-          element: <About />,
-        },
+
         {
           path: "/contact",
           element: <Contact />,
@@ -45,11 +38,6 @@ function App() {
         {
           path: "/services",
           element: <Services />,
-        },
-
-        {
-          path: "/solutions",
-          element: <Solutions />,
         },
       ],
     },

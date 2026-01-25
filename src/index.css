@@ -15,6 +15,25 @@
   animation-fill-mode: forwards;
 }
 
+#dataCenter {
+  scroll-margin-top: 120px;
+}
+#maintenance {
+  scroll-margin-top: 120px;
+}
+#cybersecurity {
+  scroll-margin-top: 120px;
+}
+#physicalSecurity {
+  scroll-margin-top: 115px;
+}
+#lowCurrent {
+  scroll-margin-top: 116px;
+}
+
+#audioVisual {
+  scroll-margin-top: 115px;
+}
 @keyframes move-wrapper {
   0% {
     transform: translate(150%, 30%) rotate(0) scale(0.8);

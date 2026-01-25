@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
-    <>
+    <main>
       <Helmet>
         <title>Contact Us - Core Link</title>
         <meta
@@ -134,13 +134,13 @@ function Contact() {
               className="p-4 rounded-xl border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
               required
             />
-            <button className="dark:bg-cyan-500/50 bg-slate-400 hover:bg-cyan-900 cursor-pointer dark:text-white text-slate-950 px-6 py-4 rounded-xl font-semibold transition">
+            <button className="bg-blue-950 text-white cursor-pointer  px-6 py-4 rounded-xl font-semibold transition">
               Send Message
             </button>
           </form>
         </section>
       </div>
-    </>
+    </main>
   );
 }
 
