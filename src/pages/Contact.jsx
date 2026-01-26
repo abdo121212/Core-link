@@ -15,28 +15,35 @@ function Contact() {
       </Helmet>
       <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white ">
         {/* Hero */}
-        <section
-          className=" relative  inset-0 bg-cover bg-center h-screen flex items-center justify-center flex-col"
-          style={{ backgroundImage: `url(${background})` }}
-        >
-          {/* Overlay داكن */}
-          <div className="absolute inset-0 bg-black/50"></div>{" "}
-          {/* 50% شفافية */}
-          <h1
-            data-aos-delay="300"
-            data-aos="fade-left"
-            className="text-5xl md:text-6xl font-extrabold mb-4 text-white text-center"
-          >
-            Contact <span className="">Us</span>
-          </h1>
-          <p
-            data-aos-delay="300"
-            data-aos="fade-right"
-            className=" max-w-2xl mx-auto text-lg text-white text-center    "
-          >
-            We'd love to hear from you! Reach out to us via form, email, phone,
-            or visit us.
-          </p>
+
+        <section className="relative flex items-center justify-center px-6 overflow-hidden h-screen">
+          {/* Background Image */}
+          <div
+            style={{ backgroundImage: `url(${background})` }}
+            className="absolute inset-0 bg-fixed bg-cover  bg-center z-0"
+          />
+
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/40 z-10"></div>
+
+          {/* Content */}
+          <div className="relative z-20 max-w-7xl mx-auto text-center">
+            <h1
+              data-aos-delay="300"
+              data-aos="fade-up"
+              className="text-5xl md:text-6xl font-extrabold mb-6 my-20 text-white"
+            >
+              Contact <span className="text-white">Us</span>
+            </h1>
+            <p
+              data-aos-delay="400"
+              data-aos="fade-up"
+              className="max-w-3xl text-gray-100 text-lg mx-auto"
+            >
+              We'd love to hear from you! Reach out to us via form, email,
+              phone, or visit us.
+            </p>
+          </div>
         </section>
 
         {/* Contact Info */}

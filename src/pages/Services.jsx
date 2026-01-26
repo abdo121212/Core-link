@@ -21,7 +21,6 @@ import maintenanceImg from "../assets/website/IMG_8010.JPG.jpeg";
 function Services() {
   const { hash } = useLocation();
 
-  console.log(hash);
 
   useEffect(() => {
     if (hash) {
@@ -51,7 +50,7 @@ function Services() {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/30 z-10"></div>
+            <div className="absolute inset-0 bg-black/30 z-40"></div>
 
             {/* Content */}
             <div className="relative z-20 max-w-7xl mx-auto text-center">
@@ -609,21 +608,6 @@ function Services() {
         {/* CTA */}
         <section className="py-24 px-6">
           <div className="max-w-6xl mx-auto rounded-3xl  p-16 text-center">
-            <h2
-              data-aos-delay="300"
-              data-aos="fade-up"
-              className="text-4xl font-bold mb-6"
-            >
-              Need Professional IT Services?
-            </h2>
-            <p
-              data-aos-delay="500"
-              data-aos="fade-up"
-              className="text-gray-700 dark:text-gray-300 mb-8"
-            >
-              Our certified engineers are ready to support your business at
-              every stage.
-            </p>
             <Link
               to={"/contact"}
               onClick={() =>
