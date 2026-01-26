@@ -54,27 +54,27 @@ const Home = () => {
         <AboutUs />
         <div className="container px-14 mx-auto">
           {/* Split Layout Services */}
-          <div className="flex justify-center">
-            <Link
-              to="services"
-              onClick={() =>
-                window.scrollTo({
-                  top: 0,
-                  behavior: "smooth",
-                })
-              }
-            >
-              <h1 className="text-4xl font-bold text-[#223760] dark:text-white cursor-pointer">
-                Our Services
-              </h1>
-            </Link>
-          </div>
 
           <section
             data-aos-delay="300"
             data-aos="fade-up"
             className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16"
           >
+            <div className="flex justify-center">
+              <Link
+                to="services"
+                onClick={() =>
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  })
+                }
+              >
+                <h1 className="text-4xl font-bold text-[#223760] dark:text-white cursor-pointer">
+                  Our Services
+                </h1>
+              </Link>
+            </div>
             <ServiceRow
               LinkId={"dataCenter"}
               icon={<Server />}
