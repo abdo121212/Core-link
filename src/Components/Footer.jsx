@@ -23,17 +23,28 @@ const Footer = () => {
       >
         <div className="grid md:grid-cols-3 py-4">
           {/* Company Info */}
-          <section aria-labelledby="footer-company" className="py-8 px-4">
-            <h2
-              id="footer-company"
-              className="sm:text-3xl text-xl font-bold mb-3"
-            >
-              Core Link
-            </h2>
+          <section aria-labelledby="footer-company" className="py-4 px-4">
+            <Link to={"/"} className="flex  py-2 flex-col ">
+              <h3
+                data-aos="fade-right"
+                className="text-3xl font-semibold dark:text-white text-[#223760]"
+              >
+                Core{" "}
+                <span className=" text-[#636870] dark:text-white">
+                  Li
+                  <span className="text-[24px]">N</span>k
+                </span>
+              </h3>
+              <h6
+                data-aos="fade-left"
+                className="text-[#223760] dark:text-white tracking-[0.5em] text-[12px]"
+              >
+                ARABIA
+              </h6>
+            </Link>
 
-            <p className="text-sm my-2">
-              It is not just a technology company, but a success partner
-              building the future with confidence.
+            <p className="text-sm my-2 w-3/4">
+              Delivering End-to-End Technology Solutions with Core Link Arabia
             </p>
 
             <p className="font-medium">Smart vision, Secure future</p>
@@ -147,7 +158,10 @@ const Footer = () => {
               <address className="not-italic space-y-4">
                 <div className="flex items-center gap-3">
                   <HiOutlineLocationMarker size={20} />
-                  <span>Riyadh, Kingdom of Saudi Arabia</span>
+                  <span>
+                    6143 king Abdul Aziz Rd, 2901 Al Arid dist , Riyadh 13342 ,
+                    Kingdom of Saudi Arabia
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-3">

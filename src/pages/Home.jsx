@@ -54,7 +54,21 @@ const Home = () => {
         <AboutUs />
         <div className="container px-14 mx-auto">
           {/* Split Layout Services */}
-          <h1 className="text-4xl text-center font-medium">Our Services</h1>
+          <div className="flex justify-center">
+            <Link
+              to="services"
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+            >
+              <h1 className="text-4xl font-bold text-[#223760] dark:text-white cursor-pointer">
+                Our Services
+              </h1>
+            </Link>
+          </div>
 
           <section
             data-aos-delay="300"

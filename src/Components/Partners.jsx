@@ -34,7 +34,7 @@ const Partners = () => {
   return (
     <section className="dark:text-white dark:bg-black container  my-20 duration-300">
       <h1
-        className="text-3xl sm:text-4xl text-center mb-12 pb-10"
+        className="text-3xl sm:text-4xl text-center font-bold text-[#223760] dark:text-white mb-12 pb-10"
         data-aos="fade-up"
       >
         Our Partners

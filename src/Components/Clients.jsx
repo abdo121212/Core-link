@@ -38,7 +38,7 @@ const Clients = () => {
       {/* Section Title */}
       <h2
         id="clients-title"
-        className="text-3xl sm:text-4xl text-center pb-20 font-semibold"
+        className="text-3xl sm:text-4xl text-center pb-20 font-bold text-[#223760] dark:text-white"
         data-aos="fade-up"
       >
         Our Clients

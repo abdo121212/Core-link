@@ -26,14 +26,14 @@ const Navbar = () => {
     },
     {
       id: 3,
-      name: "Contact",
+      name: "Contact Us",
       link: "contact",
     },
   ];
 
   return (
     <nav className=" md:py-0 w-full  select-none  mx-auto   z-999   fixed dark:bg-black/90 bg-white rounded-b-2xl  shadow-xl">
-      <div className="flex items-center justify-between  px-5 py-2">
+      <div className="flex items-center justify-between   px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14  mx-auto py-2">
         {/* Logo */}
         <Link to={"/"} className="flex items-center p-5 flex-col ">
           <h3

@@ -5,7 +5,7 @@ import { MdSecurity } from "react-icons/md";
 import { BsFillDatabaseFill } from "react-icons/bs";
 import { ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet";
-import bg from "../assets/website/cybersecurity-professional-work.jpg";
+import bg from "../assets/website/WhatsApp Image 2026-01-26 at 12.40.32 PM.jpeg";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import WhatWe from "../Components/WhatWe";
@@ -43,7 +43,7 @@ function Services() {
       <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white">
         <div>
           {/* Hero */}
-          <section className="relative py-52 px-6 overflow-hidden h-screen">
+          <section className="relative flex items-center justify-center px-6 overflow-hidden h-screen">
             {/* Background Image */}
             <div
               style={{ backgroundImage: `url(${bg})` }}
@@ -97,7 +97,7 @@ function Services() {
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-4">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-2">
                 <div className="space-y-4">
                   <div
                     data-aos-delay="100"
@@ -176,7 +176,7 @@ function Services() {
           >
             {/* التعديل: استخدام flex-col-reverse للموبايل فقط لرفع الصورة */}
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full items-stretch">
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-8 bg-gray-300 dark:bg-black">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-8 bg-gray-300 dark:bg-black">
                 <div className="space-y-4">
                   <div
                     data-aos-delay="100"
@@ -201,7 +201,7 @@ function Services() {
                   Integrated physical and digital security services ensuring
                   protection, visibility, and operational control.
                 </p>
-                <ul className="space-y-4">
+                <ul className="space-y-2">
                   {[
                     "CCTV & Video Surveillance",
                     "Smart Access Controls",
@@ -277,8 +277,8 @@ function Services() {
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-8">
-                <div className="space-y-4">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-4">
+                <div className="space-y-1">
                   <div
                     data-aos="fade-up"
                     data-aos-delay={"100"}
@@ -354,8 +354,8 @@ function Services() {
           >
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full items-stretch">
               {/* Content */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-8 bg-gray-300 dark:bg-black">
-                <div className="space-y-4">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-8 bg-gray-300 dark:bg-black">
+                <div className="space-y-2">
                   <div
                     data-aos="fade-up"
                     data-aos-delay={"100"}
@@ -452,8 +452,8 @@ function Services() {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-8">
-                <div className="space-y-4">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-5">
+                <div className="space-y-2">
                   <div
                     data-aos="fade-up"
                     data-aos-delay={"100"}
@@ -527,8 +527,8 @@ function Services() {
           >
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full items-stretch">
               {/* Content */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-8 bg-gray-300 dark:bg-black">
-                <div className="space-y-4">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-5 bg-gray-300 dark:bg-black">
+                <div className="space-y-2">
                   <div
                     data-aos="fade-up"
                     data-aos-delay={"100"}

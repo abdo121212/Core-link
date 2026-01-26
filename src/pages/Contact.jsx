@@ -16,7 +16,7 @@ function Contact() {
       <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white ">
         {/* Hero */}
         <section
-          className=" relative py-56 inset-0 bg-cover bg-center bg-fixed"
+          className=" relative  inset-0 bg-cover bg-center h-screen flex items-center justify-center flex-col"
           style={{ backgroundImage: `url(${background})` }}
         >
           {/* Overlay داكن */}
