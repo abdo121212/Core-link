@@ -17,7 +17,7 @@ function AboutUs() {
               About Us
             </h2>
 
-            <section className="max-w-5xl mx-auto text-center space-y-6 p-4">
+            <section className="max-w-5xl mx-auto text-start space-y-6 p-4">
               <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Core Link Arabia delivers comprehensive ICT, networking, and
                 security solutions under one roof. Our integrated approach
