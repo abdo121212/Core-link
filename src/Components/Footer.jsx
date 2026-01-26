@@ -26,7 +26,7 @@ const Footer = () => {
           <section aria-labelledby="footer-company" className="py-4 px-4">
             <Link to={"/"} className="flex  py-2 flex-col ">
               <h3
-                data-aos="fade-right"
+                data-aos="fade-down"
                 className="text-3xl font-semibold dark:text-white text-[#223760]"
               >
                 Core{" "}
@@ -36,7 +36,7 @@ const Footer = () => {
                 </span>
               </h3>
               <h6
-                data-aos="fade-left"
+                data-aos="fade-up"
                 className="text-[#223760] dark:text-white tracking-[0.5em] text-[12px]"
               >
                 ARABIA
@@ -157,10 +157,7 @@ const Footer = () => {
 
               <address className="not-italic space-y-4">
                 <div className="flex items-start gap-3 text-sm leading-relaxed max-w-sm">
-                  <HiOutlineLocationMarker
-                    size={30}
-                    className="mt-0.5"
-                  />
+                  <HiOutlineLocationMarker size={30} className="mt-0.5" />
                   <span>
                     King Abdul Aziz Rd, Al Arid District, Riyadh 13342, Saudi
                     Arabia
