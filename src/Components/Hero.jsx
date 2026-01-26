@@ -20,8 +20,8 @@ const Hero = () => {
       </video>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto h-full flex items-center justify-center px-6">
-        <div className="text-center max-w-3xl space-y-6 text-white">
+      <div className="relative z-10 container mx-auto h-full flex items-center  justify-center px-6">
+        <div className="text-center max-w-3xl space-y-6 text-white pt-28">
           <h1
             className="text-4xl sm:text-5xl font-semibold"
             data-aos="fade-up"
