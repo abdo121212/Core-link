@@ -13,7 +13,7 @@ const Hero = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover translate-y-52 pl-10"
+        className="absolute inset-0 w-full h-full object-cover translate-y-32 "
         aria-hidden="true"
       >
         <source src={bg} type="video/mp4" />
@@ -22,14 +22,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto h-full flex items-center  justify-center px-6">
         <div className="text-center max-w-3xl space-y-6 text-white pt-28">
-          <h1
-            className="text-4xl sm:text-5xl font-semibold"
-            data-aos="fade-up"
-          >
+          <h1 className="text-4xl sm:text-5xl font-semibold" data-aos="fade-up">
             Delivering End-to-End Technology Solutions with
-            <span className="block  text-[40px] mt-2">
-              Core Link Arabia
-            </span>
+            <span className="block  text-[40px] mt-2">Core Link Arabia</span>
           </h1>
 
           <p

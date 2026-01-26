@@ -176,7 +176,7 @@ function Services() {
           >
             {/* التعديل: استخدام flex-col-reverse للموبايل فقط لرفع الصورة */}
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full items-stretch">
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-8 bg-gray-300 dark:bg-black">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-8  dark:bg-black">
                 <div className="space-y-4">
                   <div
                     data-aos-delay="100"
@@ -354,7 +354,7 @@ function Services() {
           >
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full items-stretch">
               {/* Content */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-8 bg-gray-300 dark:bg-black">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-8  dark:bg-black">
                 <div className="space-y-2">
                   <div
                     data-aos="fade-up"
@@ -527,7 +527,7 @@ function Services() {
           >
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 w-full h-full items-stretch">
               {/* Content */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-5 bg-gray-300 dark:bg-black">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-12 space-y-5  dark:bg-black">
                 <div className="space-y-2">
                   <div
                     data-aos="fade-up"

@@ -156,11 +156,14 @@ const Footer = () => {
               </h3>
 
               <address className="not-italic space-y-4">
-                <div className="flex items-center gap-3">
-                  <HiOutlineLocationMarker size={20} />
+                <div className="flex items-start gap-3 text-sm leading-relaxed max-w-sm">
+                  <HiOutlineLocationMarker
+                    size={30}
+                    className="mt-0.5"
+                  />
                   <span>
-                    6143 king Abdul Aziz Rd, 2901 Al Arid dist , Riyadh 13342 ,
-                    Kingdom of Saudi Arabia
+                    King Abdul Aziz Rd, Al Arid District, Riyadh 13342, Saudi
+                    Arabia
                   </span>
                 </div>
 
