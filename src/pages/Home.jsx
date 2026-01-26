@@ -56,11 +56,12 @@ const Home = () => {
           {/* Split Layout Services */}
 
           <section
-            data-aos-delay="300"
             data-aos="fade-up"
-            className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16"
+            data-aos-delay="300"
+            className="max-w-7xl mx-auto px-6 py-24"
           >
-            <div className="flex justify-center">
+            {/* Title */}
+            <div className="text-center mb-16">
               <Link
                 to="services"
                 onClick={() =>
@@ -70,52 +71,58 @@ const Home = () => {
                   })
                 }
               >
-                <h1 className="text-4xl font-bold text-[#223760] dark:text-white cursor-pointer">
+                <h1 className="text-4xl md:text-5xl font-bold text-[#223760] dark:text-white cursor-pointer">
                   Our Services
                 </h1>
               </Link>
             </div>
-            <ServiceRow
-              LinkId={"dataCenter"}
-              icon={<Server />}
-              title="Data Center Solutions"
-              text="Design, implementation, and maintenance of enterprise-grade data centers with high availability."
-            />
 
-            <ServiceRow
-              LinkId={"physicalSecurity"}
-              icon={<Eye />}
-              title="Physical Security Solutions"
-              text="Installation and support of CCTV, access control, and audio-visual systems."
-            />
+            {/* Services Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <ServiceRow
+                LinkId="dataCenter"
+                icon={<Server />}
+                title="Data Center Solutions"
+                text="Design, implementation, and maintenance of enterprise-grade data centers with high availability."
+              />
 
-            <ServiceRow
-              LinkId={"lowCurrent"}
-              icon={<Cpu />}
-              title="Low Current / Smart Building Systems"
-              text="Intelligent building and low-current systems delivering automation, efficiency, and centralized management."
-            />
+              <ServiceRow
+                LinkId="physicalSecurity"
+                icon={<Eye />}
+                title="Physical Security Solutions"
+                text="Installation and support of CCTV, access control, and audio-visual systems."
+              />
 
-            <ServiceRow
-              LinkId={"audioVisual"}
-              icon={<Wrench />}
-              title="Audio Visual and Smart Conference Systems"
-              text="Integrated audio-visual and smart meeting room solutions for effective communication and collaboration."
-            />
+              <ServiceRow
+                LinkId="lowCurrent"
+                icon={<Cpu />}
+                title="Low Current / Smart Building Systems"
+                text="Intelligent building and low-current systems delivering automation, efficiency, and centralized management."
+              />
 
-            <ServiceRow
-              LinkId={"cybersecurity"}
-              icon={<Shield />}
-              title="Cyber Security Services"
-              text="Security assessment, firewall deployment, monitoring, and incident response services."
-            />
-            <ServiceRow
-              LinkId={"maintenance"}
-              icon={<Network />}
-              title="Operations, Maintenance & SLA Services"
-              text="Operational services ensuring long-term system performance, reliability, and compliance."
-            />
+              <ServiceRow
+                LinkId="audioVisual"
+                icon={<Wrench />}
+                title="Audio Visual and Smart Conference Systems"
+                text="Integrated audio-visual and smart meeting room solutions for effective communication and collaboration."
+              />
+
+              <ServiceRow
+                LinkId="cybersecurity"
+                icon={<Shield />}
+                title="Cyber Security Services"
+                text="Security assessment, firewall deployment, monitoring, and incident response services."
+              />
+
+              <ServiceRow
+                LinkId="maintenance"
+                icon={<Network />}
+                title="Operations, Maintenance & SLA Services"
+                text="Operational services ensuring long-term system performance, reliability, and compliance."
+              />
+            </div>
           </section>
+
           <Partners />
           <Clients />
           {/* <SocialLinks /> */}
