@@ -111,18 +111,30 @@ const Navbar = () => {
               <div className="bg-white dark:bg-black w-full h-80">
                 <div className="flex items-center justify-center w-full h-full">
                   <ul className="flex flex-col space-y-3">
-                    {navLinks.map(({ id, link, name }) => (
-                      <Link
-                        to={link}
-                        key={id}
-                        onClick={() => {
-                          setOpen(!open);
-                          window.scrollTo({ top: 0, behavior: "smooth" });
-                        }}
-                        className=" border flex items-center justify-center  py-2 px-7  rounded-2xl text-xl duration-300 hover:scale-110"
-                      >
-                        {name}
-                      </Link>
+                    {navLinks.map(({ id, link, name, download }) => (
+                      <li key={id}>
+                        {download ? (
+                          <a
+                            href={link}
+                            download
+                            onClick={() => setOpen(false)}
+                            className="border flex items-center justify-center py-2 px-7 rounded-2xl text-xl duration-300 hover:scale-110"
+                          >
+                            {name}
+                          </a>
+                        ) : (
+                          <Link
+                            to={link}
+                            onClick={() => {
+                              setOpen(false);
+                              window.scrollTo({ top: 0, behavior: "smooth" });
+                            }}
+                            className="border flex items-center justify-center py-2 px-7 rounded-2xl text-xl duration-300 hover:scale-110"
+                          >
+                            {name}
+                          </Link>
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </div>
