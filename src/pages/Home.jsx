@@ -1,7 +1,5 @@
 import Hero from "../Components/Hero";
-import Partners from "../Components/Partners";
 import AboutUs from "../pages/AboutUs";
-import Clients from "../Components/Clients";
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import ScrollUp from "../Components/ScrollUp";
@@ -17,7 +15,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import OurClients from "../Components/OurClients";
-import SocialLinks from "../Components/SocialLinks";
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -137,7 +134,7 @@ const Home = () => {
               <h2
                 data-aos-delay="300"
                 data-aos="fade-up"
-                className="text-3xl font-bold mb-4 text-[#223760]"
+                className="text-3xl font-bold mb-4 text-[#223760] dark:text-white"
               >
                 Ready to empower your business with Core Link Arabia?
               </h2>

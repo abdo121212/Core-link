@@ -21,7 +21,6 @@ import maintenanceImg from "../assets/website/IMG_8010.JPG.jpeg";
 function Services() {
   const { hash } = useLocation();
 
-
   useEffect(() => {
     if (hash) {
       const el = document.querySelector(hash);
@@ -76,7 +75,7 @@ function Services() {
           {/* --- 1. Data Center Solutions --- */}
           <section
             id="dataCenter"
-            className="relative w-full dark:bg-dark bg-white text-black dark:text-white flex items-center"
+            className="relative w-full dark:bg-[#0f0f0f] bg-white text-black dark:text-white flex items-center"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full items-stretch">
               {/* Image Section */}
@@ -96,12 +95,12 @@ function Services() {
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-2">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-2 ">
                 <div className="space-y-4">
                   <div
                     data-aos-delay="100"
                     data-aos="fade-up"
-                    className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-[#223760] shadow-lg shadow-[#223760]/20"
+                    className="w-14 h-14 rounded-full flex items-center justify-center mb-6 bg-[#223760]  shadow-lg shadow-[#223760]/20"
                   >
                     <BsFillDatabaseFill className="text-white text-2xl" />
                   </div>
@@ -276,7 +275,7 @@ function Services() {
               </div>
 
               {/* Content Section */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-4">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-4 dark:bg-black">
                 <div className="space-y-1">
                   <div
                     data-aos="fade-up"
@@ -451,7 +450,7 @@ function Services() {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-5">
+              <div className="flex flex-col justify-center px-8 lg:px-20 py-5 space-y-5 dark:bg-black">
                 <div className="space-y-2">
                   <div
                     data-aos="fade-up"

@@ -38,7 +38,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className=" md:py-0 w-full  select-none  mx-auto   z-999   fixed dark:bg-black/90 bg-white rounded-b-2xl  shadow-xl">
+    <nav className=" md:py-0 w-full  select-none  mx-auto   z-999   fixed dark:bg-black/90 bg-white   shadow-xl">
       <div className="flex items-center justify-between   px-5 sm:px-8 md:px-10 lg:px-12 xl:px-14  mx-auto py-2">
         {/* Logo */}
         <Link to={"/"} className="flex items-center p-5 flex-col ">
@@ -70,16 +70,30 @@ const Navbar = () => {
                   <a
                     href={link}
                     download
-                    className="text-xl font-medium hover:scale-105 duration-300"
+                    className="text-xl font-medium hover:scale-105 transition-all duration-300"
                   >
                     {name}
                   </a>
                 ) : (
                   <NavLink
                     to={link}
-                    className="text-xl font-medium hover:scale-105 duration-300"
+                    end
+                    className={({ isActive }) =>
+                      `relative transition-all duration-300 ${
+                        isActive
+                          ? "text-2xl font-medium text-[#223760] dark:text-white"
+                          : "text-xl font-medium hover:scale-105"
+                      }`
+                    }
                   >
-                    {name}
+                    {({ isActive }) => (
+                      <span className="relative inline-block">
+                        {name}
+                        {isActive && (
+                          <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-[#223760] dark:bg-white rounded-full"></span>
+                        )}
+                      </span>
+                    )}
                   </NavLink>
                 )}
               </li>
