@@ -16,6 +16,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import OurClients from "../Components/OurClients";
+import SocialLinks from "../Components/SocialLinks";
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -123,9 +125,11 @@ const Home = () => {
             </div>
           </section>
 
-          <Partners />
-          <Clients />
+          {/* <Partners />
+          <Clients /> */}
           {/* <SocialLinks /> */}
+
+          <OurClients />
 
           {/* CTA */}
           <section className=" py-16">

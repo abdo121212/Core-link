@@ -29,6 +29,12 @@ const Navbar = () => {
       name: "Contact Us",
       link: "contact",
     },
+    {
+      id: 4,
+      name: "Profile",
+      link: "/CoreLink Arabia Company Profile f2.pdf",
+      download: true,
+    },
   ];
 
   return (
@@ -58,28 +64,26 @@ const Navbar = () => {
 
         <nav className="hidden md:flex items-center gap-x-7">
           <ul className="flex items-center gap-8">
-            {navLinks.map(({ id, name, link }) => {
-              return (
-                <li key={id} data-aos="fade-up">
+            {navLinks.map(({ id, name, link, download }) => (
+              <li key={id}>
+                {download ? (
+                  <a
+                    href={link}
+                    download
+                    className="text-xl font-medium hover:scale-105 duration-300"
+                  >
+                    {name}
+                  </a>
+                ) : (
                   <NavLink
-                    to={`${link}`}
-                    onClick={() =>
-                      window.scrollTo({
-                        top: 0,
-                        behavior: "smooth",
-                      })
-                    }
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-xl font-medium border-b-2 hover:scale-105 border-[#223760] text-[#223760]  dark:text-white dark:border-white duration-500 transition-colors py-2"
-                        : "transition-colors py-2 text-xl font-medium  "
-                    }
+                    to={link}
+                    className="text-xl font-medium hover:scale-105 duration-300"
                   >
                     {name}
                   </NavLink>
-                </li>
-              );
-            })}
+                )}
+              </li>
+            ))}
           </ul>
 
           <DarkMode />
