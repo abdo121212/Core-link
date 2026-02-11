@@ -76,6 +76,9 @@ const Navbar = () => {
                   </a>
                 ) : (
                   <NavLink
+                    onClick={() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                     to={link}
                     end
                     className={({ isActive }) =>
