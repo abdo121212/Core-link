@@ -1,5 +1,3 @@
-import React from "react";
-
 const OurClients = () => {
   return (
     <section>
@@ -8,7 +6,7 @@ const OurClients = () => {
           Our Partners & Clients
         </h1>
 
-        <p className="text-center text-black text-lg dark:bg-black bg-white dark:text-white shadow-sm  p-5 rounded-2xl">
+        <p className="text-center text-black text-lg dark:bg-black bg-white dark:text-white shadow-lg  p-5 rounded-2xl">
           Core Link Arabia collaborates with leading global technology vendors,
           enabling the delivery of reliable, scalable, and future-ready
           solutions. Through strong professional relationships and a deep
