@@ -7,7 +7,6 @@ import { FaInstagram, FaLinkedin, FaMobileAlt } from "react-icons/fa";
 const Footer = () => {
   const FooterLinks = [
     { id: 1, title: "Home", link: "/" },
-    { id: 2, title: "About", link: "/about" },
     { id: 3, title: "Contact", link: "/contact" },
     { id: 4, title: "Services", link: "/services" },
   ];
@@ -87,7 +86,10 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 col-span-2 md:pl-10">
             {/* Quick Links */}
             <section aria-labelledby="footer-links" className="py-8 px-4">
-              <h3 id="footer-links" className="text-xl font-bold mb-3 dark:text-white text-[#223760]">
+              <h3
+                id="footer-links"
+                className="text-xl font-bold mb-3 dark:text-white text-[#223760]"
+              >
                 Quick Links
               </h3>
               <ul className="space-y-3">
@@ -112,7 +114,10 @@ const Footer = () => {
 
             {/* Services */}
             <section aria-labelledby="footer-services" className="py-8 px-4">
-              <h3 id="footer-services" className="text-xl font-bold mb-3 dark:text-white text-[#223760]">
+              <h3
+                id="footer-services"
+                className="text-xl font-bold mb-3 dark:text-white text-[#223760]"
+              >
                 Services
               </h3>
               <ul className="space-y-4">
@@ -151,13 +156,16 @@ const Footer = () => {
 
             {/* Contact */}
             <section aria-labelledby="footer-contact" className="py-8 px-4">
-              <h3 id="footer-contact" className="text-xl font-bold mb-3 dark:text-white text-[#223760]">
+              <h3
+                id="footer-contact"
+                className="text-xl font-bold mb-3 dark:text-white text-[#223760]"
+              >
                 Contact
               </h3>
 
               <address className="not-italic space-y-4">
                 <div className="flex items-start gap-3 text-sm leading-relaxed max-w-sm">
-                  <HiOutlineLocationMarker size={30}  className="mt-0.5 " />
+                  <HiOutlineLocationMarker size={30} className="mt-0.5 " />
                   <span>
                     King Abdul Aziz Rd, Al Arid District, Riyadh 13342, Saudi
                     Arabia

@@ -5,7 +5,7 @@ import background from "../assets/website/IMG_8021.JPG.jpeg";
 
 function Contact() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Helmet>
         <title>Contact Us - Core Link</title>
         <meta
@@ -13,21 +13,21 @@ function Contact() {
           content="تواصل معنا في Core Link عبر النموذج أو معلومات الاتصال."
         />
       </Helmet>
-      <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white ">
+      <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-white w-full">
         {/* Hero */}
 
-        <section className="relative flex items-center justify-center px-6 overflow-hidden h-screen">
+        <section className="relative flex items-center justify-center px-6 min-h-screen overflow-x-hidden">
           {/* Background Image */}
           <div
             style={{ backgroundImage: `url(${background})` }}
-            className="absolute inset-0 bg-fixed bg-cover  bg-center z-0"
+            className="absolute inset-0 bg-cover bg-center z-0 w-full max-w-full"
           />
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/40 z-10"></div>
 
           {/* Content */}
-          <div className="relative z-20 max-w-7xl mx-auto text-center">
+          <div className=" z-20 max-w-7xl mx-auto text-center">
             <h1
               data-aos-delay="300"
               data-aos="fade-up"
@@ -41,7 +41,7 @@ function Contact() {
               className="max-w-3xl text-gray-100 text-lg mx-auto"
             >
               We'd love to hear from you! Reach out to us via form, email,
-              phone, or visit us.
+              phone, or visit us .
             </p>
           </div>
         </section>
@@ -67,8 +67,7 @@ function Contact() {
               data-aos="fade-right"
               className="text-gray-700 dark:text-gray-300"
             >
-                  King Abdul Aziz Rd, Al Arid District, Riyadh 13342, Saudi
-                    Arabia
+              King Abdul Aziz Rd, Al Arid District, Riyadh 13342, Saudi Arabia
             </p>
           </div>
           <div className="flex flex-col items-center text-center gap-4">
